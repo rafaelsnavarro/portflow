@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+header{
+	height: 65vw;
+	border: solid red;
+}
+.menu{
+	background-color: white;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 10%;
+	margin-top: 0%;
+	
+}
+.image-blue{
+	margin-top: 2.5vh;
+	background-image: url(./img/background-header.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 85%;
+}
+h1{
+	font-family: Montserrat;
+	position: absolute;
+	font-size: 1.5vw;
+	padding: 4vh 0 0 10vw;
+	font-weight: 900%;
+	margin-top: 0%;
+}
+h2{
+	font-size: 3.5vw;
+	color: white;
+	font-weight: 900%;
+	padding: 15vw 0 0 10vw;
+}
+header p{
+	color: white;
+	font-size: 2vw;
+	font-weight: 200%;
+	margin: 4vw 0 0 10vw;
+}
+ul{
+	font-weight: 400%;
+	position: absolute;
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	width: 30vw;
+	margin-left: 60vw;
+	margin-top: 3vw;
+}
+li:hover{
+	cursor: pointer;
+	font-weight: 900;
+}
+
+@media(min-width: 600px) {
+header{
+	border: solid blue;
+	height: 100vh;
+}
+.menu{
+	border: solid yellow;
+}
+
+	ul{
+		margin-left: 45vw;
+		width: 45vw;
+	}
+	h1{
+		position: absolute;
+		font-size: 1.5rem;
+		padding: 1.5vw 0 0 10vw;
+		font-weight: 900;
+		width: 13vw;
+}
+.image-blue{
+	background-image: url(./img/back-header-mobile.png);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	border: solid orange;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+h2{
+	font-size: 10vw;
+}
+.image-blue p{
+	font-size: 3.5vw;
+}
+}
