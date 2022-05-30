@@ -9,7 +9,7 @@
 	display: none;
 }
 header{
-	height: 65vw;
+	height: 44vw;
 }
 .menu{
 	background-color: white;
@@ -63,8 +63,37 @@ li:hover{
 	cursor: pointer;
 	font-weight: 900;
 }
+main{
+	position: absolute;
+	width: 80vw;
+	height: 60vw;
+	margin: 10vw 0 0 10vw;
+	border: solid yellow;
+}
+main img{
+	width: 19vw;
+}
+main .coluna1{
+	display: flex;
+	justify-content: space-around;
+}
+main .coluna2{
+	padding-top: 1vw;
+	display: flex;
+	justify-content: space-around;
+}
+main .coluna3{
+	padding-top: 1vw;
+	display: flex;
+	justify-content: space-around;
+}
 
 @media(max-width: 600px) {
+	header{
+		border: solid green;
+		margin: 0vw 1 1 1vw;
+		
+	}
 	ul{
 		display: none;
 	}
@@ -94,6 +123,8 @@ li:hover{
 	top: 2vh;
 	width: 100%;
 	height: 150vw;
+	margin: 1vw 1 1 10vw;
+	border: solid yellow;
 }
 h2{
 	font-size: 10vw;
