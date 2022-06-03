@@ -16,6 +16,7 @@
 }
 header{
 	height: 44vw;
+	border: solid green;
 }
 .menu{
 	background-color: white;
@@ -27,8 +28,8 @@ header{
 	
 }
 .image-blue{
-	position: absolute;
-	margin-top: 6vw;
+	position: relative;
+	top: 110px;
 	background-image: url(./img/background-header.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -69,10 +70,12 @@ li:hover{
 	font-weight: 900;
 }
 main{
-	position: absolute;
-	width: 80vw;
+	width: 100%;
 	height: 60vw;
-	margin: 10vw 0 0 10vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border: solid firebrick;
 }
 main img{
 	width: 19vw;
@@ -82,12 +85,10 @@ main .coluna1{
 	justify-content: space-around;
 }
 main .coluna2{
-	padding-top: 1vw;
 	display: flex;
 	justify-content: space-around;
 }
 main .coluna3{
-	padding-top: 1vw;
 	display: flex;
 	justify-content: space-around;
 }
@@ -95,35 +96,31 @@ footer{
 	background-color: #d3d3d3;
 	width: 100%;
 	height: 7vw;
-	position: absolute;
-	top: 113vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 footer section{
-	width: 30vw;
-	position: absolute;
-	margin: 3vw 0 0 8vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
 }
-footer section img{
-	margin-left: 1.8vw;
-}
-h3{
-	font-weight: 700;
-	position: absolute;
-	margin: 0.6vw 0 0 30vw;
-}
-footer section p{
-	font-size: 0.6vw;
-	width: 50vw;
-	position: absolute;
-	margin: 0.5vw 0 0 37vw;
-}
-footer section .p2{
-	font-size: 0.6vw;
-	width: 50vw;
-	position: absolute;
-	margin: 1.3vw 0 0 37vw;
+div{
+	border: solid green;
 }
 
+h3{
+	font-weight: 700;
+}
+footer section div p{
+	font-size: 0.6vw;
+	width: 60%;
+	border: solid yellow;
+}
+.rede-social{
+	width: 40%;
+}
 @media(max-width: 600px) {
 	header{
 		margin: 5vw 1 1 1vw;
@@ -168,28 +165,37 @@ h2{
 	margin-top: 9vw;
 }
 main{
-	margin-top: 160vw;
-	width: 80vw;
+	width: 60%;
+	position: relative;
+	top: 45vw;
+	height: 100vh;
+	border: solid green;
 }
 main section img{
 	width: 60vw;
 }
-.line1{
-	flex-wrap: wrap;
+.coluna1{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border: solid yellow;
+	position: absolute;
 }
-.line1 img{
+.coluna1 img{
 	margin-top: 3vw;
 }
-.line2{
-	flex-wrap: wrap;
+.coluna2{
+	display: flex;
+	flex-direction: column;
 }
-.line2 img{
+.coluna2 img{
 	margin-top: 3vw;
 }
-.line3{
-	flex-wrap: wrap;
+.coluna3{
+	display: flex;
+	flex-direction: column;
 }
-.line3 img{
+.coluna3 img{
 	margin-top: 3vw;
 }
 }
